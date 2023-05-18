@@ -26,7 +26,7 @@ function App() {
       <MyButton onClick={()=>{alert("버튼을 눌렀습니다")}}>버튼 확인</MyButton>
       <MyButton onClick={()=>{alert("확인")}}>버튼 확인</MyButton>
       
-      <CommonButton></CommonButton>
+      <CommonButton color="red">버튼 확인</CommonButton>
       <SpecialButton></SpecialButton>
     </div>
   );
