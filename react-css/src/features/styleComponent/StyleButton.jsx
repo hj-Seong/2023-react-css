@@ -8,11 +8,16 @@ const Button = styled.a`
     /* font-size 크기를 받아와서 그 크기대로 출력 */
     font-size: ${props=>props.fontsize}rem;
 `
+
+const TomatoButton = styled(Button)`
+  color:tomato;
+`
+
     // ...rest는 나머지 연산자로 남은 매개변수의 값들을 배열/객체로 들고온다
 export default function StyleButton({children, ...rest}) {
   console.log(rest)
   /** 아래 ...은 스프레드 연산자로 안의 값을 풀어서 씀 */
   return (
-    <Button {...rest}>{children}</Button>
+    <TomatoButton {...rest}>{children}</TomatoButton>
   )
 }
